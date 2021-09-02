@@ -1,10 +1,10 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title> Form Example </ion-title>
+    <ion-title>Editing Form</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <form [formGroup]="form">
     <ion-list>
       <ion-item>
@@ -87,7 +87,10 @@
       </div>
       <ion-item>
         <ion-label position="stacked">Nationality</ion-label>
-        <ion-select formControlName="nationality" placeholder="Select Nationality">
+        <ion-select
+          formControlName="nationality"
+          placeholder="Select Nationality"
+        >
           <ion-select-option value="Malaysia">Malaysia</ion-select-option>
           <ion-select-option value="Indonesia">Indonesia</ion-select-option>
           <ion-select-option value="Singapore">Singapore</ion-select-option>
